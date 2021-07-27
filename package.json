@@ -11,7 +11,8 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "dependencies": {
     "gatsby": "^2.19.7",
@@ -27,6 +28,7 @@
   },
   "devDependencies": {
     "env-cmd": "^10.0.1",
+    "gh-pages": "^3.2.3",
     "prettier": "^1.19.1"
   },
   "repository": {
