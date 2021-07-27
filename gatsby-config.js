@@ -7,9 +7,11 @@
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: 'Imed Jaberi Resume',
+    title: 'Imed Jaberi Gatsby',
     author: 'Imed Jaberi -- O_o'
   },
+  /* repo name --deploy */
+  pathPrefix: '/the-great-gatsby-bootcamp',
   plugins: [
     'gatsby-plugin-sass',
     {
@@ -19,7 +21,7 @@ module.exports = {
         path: `${__dirname}/src/`
       }
     },
-    'gatsby-plugin-sharp', 
+    'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-transformer-remark',
       options: {
